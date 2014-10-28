@@ -1,0 +1,1 @@
+#define FADESPEED 1.0f
