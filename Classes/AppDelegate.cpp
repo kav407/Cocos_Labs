@@ -27,6 +27,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
 	CCScene *pScene = LogoScene::create();
 
+	CCFileUtils::sharedFileUtils()->addSearchPath("../../Resources");
+
+	CCFileUtils* fileUtilInstance = CCFileUtils::sharedFileUtils();
+
+
+
     // run
     pDirector->runWithScene(pScene);
 
